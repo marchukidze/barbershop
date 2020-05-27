@@ -1,0 +1,219 @@
+.top-header {
+    background-color: $gray-color;
+    color: $main-color;   
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.32);
+}
+  
+.top-header-item {
+    padding: 21px 18px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 37px 33px;
+    }
+
+    @media screen and (min-width: 992px) {
+        padding: 20px 20px;  
+    }
+
+    @media screen and (min-width: 1300px) {
+        padding: 23px 18.75%;
+    }
+}
+
+.burger-menu {
+    flex-direction: column;
+    justify-content: space-between;
+    height: $hamburger-trigger-height;
+
+    @media screen and (min-width: 992px) {
+        display: none;
+    }
+
+    .burger-menu-item {
+        background-color: $main-color;
+        border-radius: 2px;
+        height: $hamburger-item-height;
+        width: $hamburger-item-width;
+    }
+}
+
+.logo-small {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1500px) {
+        padding-right: 11.15%;
+    }
+}
+
+.nav {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+        display: block;
+    }
+
+    .menu-list {
+        display: flex;
+
+        li:not(:last-child){
+            margin-right: 40px;
+        }
+    }
+
+    a {
+        color: $main-color;
+        text-decoration: none;
+
+        &:hover {
+        @extend %montserrat-bold;
+        transition: 0.2s;
+        }
+
+        &:focus {       
+        @extend %montserrat-bold;
+        color: $orange-color;
+        transition: 0.2s;
+        }
+
+        &:focus:before {
+        content: "\2022";
+        margin-right: 5px;
+        color: $orange-color;
+        transition: 0.2s;
+        }  
+    }
+}
+
+.shopping-bag {
+    align-items: center;
+
+    @media screen and (min-width: 992px) {
+        margin-right: 20px;       
+    }
+    
+    @media screen and (min-width: 1500px) {
+        margin-right: 40px;       
+    }
+
+    .bag {
+        width: $bag-width-s-m;
+        height: $bag-height-s-m;
+    }
+
+    .purchases {
+        font-size: $purchases-fs;
+        margin-left: 10px;
+        line-height: 25px;
+    }
+}
+
+.top-header-button {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+        display: block;
+    }
+
+    .contact-us-btn{
+        @include button ($trasparent-color, $main-color);
+        padding: 16px 31px;
+        border: 1px solid $lightorange-color;
+        margin-right: 8px;
+    }
+
+    .book-now-btn {   
+        @include button ($orange-color, $main-color);
+        padding: 18px 32px;
+        border: none;
+    }
+}
+
+.bottom-header {
+    background: url('../src/img/photo/header_bg_s.png') no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {   
+        background: url('../src/img/photo/header_bg_l.png') no-repeat top;
+        background-size: cover;
+    }
+    
+    @media screen and (min-width: 992px) {   
+        background: url('../src/img/photo/header_bg_xl.png') no-repeat center;
+        background-size: cover;
+    }
+}
+
+.bottom-header-inner {
+    padding: 215px 15px 50px;
+    
+    @media screen and (min-width: 768px) {
+        padding: 130px 0 43px 29px;  
+    }
+
+    @media screen and (min-width: 1300px) {
+        padding: 209px 0 311px 360px;  
+    }
+}
+
+.logo-large {
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1300px) {
+        margin-bottom: 65px;
+    }
+
+    .logo-l {
+        width: $logo-large-width-s;
+        height: $logo-large-height-s;
+
+        @media screen and (min-width: 768px) {
+            width: $logo-large-width-m;
+            height: $logo-large-height-m;
+        }
+
+        @media screen and (min-width: 1300px) {
+            width: $logo-large-width-l;
+            height: $logo-large-height-l;
+        }
+    }
+}
+
+.bottom-header-text {
+    color: $lightorange-color;
+    font-size: $title-fs-s;
+    margin-bottom: 15px;
+    width: $logo-large-width-s;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        margin-bottom: 35px;
+        width: $logo-large-width-m;
+    }
+
+    @media screen and (min-width: 1300px) {
+        font-size: $title-fs-m;
+        font-weight: 700;
+        width: $logo-large-width-l;
+    }
+}
+
+.book-now-btn {   
+    @include button ($orange-color, $main-color);
+    padding: 15px 99px;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+        padding: 16px 25px;   
+    } 
+}
+

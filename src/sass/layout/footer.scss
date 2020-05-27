@@ -1,0 +1,244 @@
+.top-footer {
+    padding-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 115px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-around;
+        padding: 125px 0 153px ;
+    }
+
+    @media screen and (min-width: 1900px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 125px  360px 153px ;
+    }
+}
+
+.top-footer-inner {
+    font-weight: 500;
+    padding: 43px 17px 5px;
+    color: $gray-color;
+ 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        padding: 100px 32px 5px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.top-footer-contact {
+    @media screen and (min-width: 768px) {
+     margin-right: 122px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+    }
+}
+
+.footer-text {
+    line-height: 26px;
+    padding-top: 18px;
+
+    @media screen and (min-width: 768px) {
+       padding-left: 44px;
+       font-weight: 700;
+       line-height: 30px;
+    }
+}
+
+.footer-text-up {
+    @media screen and (min-width: 768px) {
+        text-transform: uppercase;
+    }
+}
+
+.schedule-day {
+    margin-right: 25px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 45px;
+    }
+}
+
+.social-block {
+    padding: 18px 0 30px;
+
+    img:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 30px 0 20px 44px;
+    }
+}
+
+.map-img {
+    width: $map-width-s;
+    height: $map-height-s;
+
+    @media screen and (min-width: 500px) {
+        height: $map-height-m;
+        width: $map-width-m;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: $map-width-l;
+        height: $map-height-l;
+    }
+}
+
+.bottom-footer {
+    background-color: $gray-color;
+    padding: 24px 15px 65px;
+    color: $main-color;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 75px 95px 30px;    
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: flex-start;
+        padding: 40px 40px 165px ;
+    }
+
+    @media screen and (min-width: 1900px) {
+        display: flex;
+        padding: 45px 360px 168px ;
+    }
+}
+
+
+.logo-footer-img {
+    width: $logo-small-width-s;
+    height: $logo-small-height-s;
+    margin-bottom: 20px;
+    
+    @media screen and (min-width: 768px) {
+       width: $logo-small-width-m;
+       height: $logo-small-height-m;
+       margin-right: 60px;
+    }
+}
+
+.bottom-footer-item {
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+     flex-direction: row;
+     flex-wrap: wrap;
+    }
+}
+
+.footer-nav {
+ padding-bottom: 14px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 67px; 
+        padding-right: 155px;  
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 0; 
+     
+    }
+
+    @media screen and (min-width: 1500px) {
+        
+        padding-right: 290px;  
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+
+        li:not(:last-child){
+            margin-bottom: 8px;
+       
+            @media screen and (min-width: 768px) {
+                margin-bottom: 15px; 
+            }
+        }
+    }
+    
+
+    a {
+        color: $main-color;
+        text-decoration: none;
+
+        &:hover {
+        @extend %montserrat-bold;
+        transition: 0.5s;
+        }
+
+        &:focus {       
+        @extend %montserrat-bold;
+        color: $orange-color;
+        transition: 0.2s;
+        }
+
+        &:focus:before {
+        content: "\2022";
+        margin-right: 5px;
+        color: $orange-color;
+        transition: 0.2s;
+        }  
+    }
+}
+
+.bottom-footer-title {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.bottom-footer-text {
+    line-height: 25px;
+    padding: 8px 0 13px;
+
+    @media screen and (min-width: 768px) {
+        line-height: 32px;  
+    }
+}
+
+.bottom-footer-contact {
+    @media screen and (min-width: 992px) {   
+        padding-right: 70px;       
+    }
+}
+
+.bottom-footer-visit {
+    @media screen and (min-width: 768px) {
+        padding-right: 98px;   
+        order: 2; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-right: 70px;     
+    }
+}
+
+.bottom-footer-follow {
+    @media screen and (min-width: 768px) {
+    order: 2; 
+    }
+}
+
+.bottom-footer-social-block {
+    padding-top: 20px;
+
+    img:not(:last-child) {
+        margin-right: 12px;
+    }
+}

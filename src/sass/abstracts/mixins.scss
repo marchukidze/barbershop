@@ -1,0 +1,34 @@
+@import "./variables.scss";
+
+
+@mixin button($bg-color, $font-color) {
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.3s, border-radius 0.3s;
+    outline: none;  
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $bg-color;  
+    color: $font-color;
+    
+    &:hover {
+        opacity: 0.9;    
+    }
+}
+
+@mixin input {
+    box-sizing: border-box;
+    height: 42px;
+    width: 100%; 
+    border: 1px solid $light-gray-color;
+    border-radius: 4px;
+    background-color: $main-color;
+    padding-left: 15px;
+    font-size: $title-fs-s; 
+    outline: none; 
+ 
+    &:focus {
+        border: 1px solid $middle-gray-color;  
+    }
+}

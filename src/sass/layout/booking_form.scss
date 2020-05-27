@@ -1,0 +1,208 @@
+.booking-form-container {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 43px 17px 23px;
+    color: $gray-color; 
+
+    @media screen and (min-width: 768px) {
+        padding: 63px 0;      
+        background: url(../src/img/photo/form_bg_m.png) no-repeat;
+        background-size: cover;    
+        background-color: rgba(0, 0, 0, 0.8);
+        background-blend-mode: multiply;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1300px) {     
+        background: url(../src/img/photo/form_bg_l.png) no-repeat;
+        background-size: cover;    
+        background-color: rgba(0, 0, 0, 0.8);
+        background-blend-mode: multiply;
+        justify-content: center;
+    } 
+}
+
+.booking-form-container-inner {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {        
+        flex-direction: column;
+        background-color: $main-color;
+        width: 89.84375%;
+        padding: 50px 45px 60px;       
+    }
+
+    @media screen and (min-width: 1500px) {   
+        width: 44.53125%;
+        padding: 50px 120px;  
+    }
+}
+
+.booking-form-name {     
+    flex-direction: column;
+    align-items: center;
+
+    .booking-form-title {
+        @extend %montserrat-bold;
+        font-size: $title-fs-s;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-transform: none;
+            font-size: $title-fs-m;
+            padding: 0 98px 15px ;
+        }
+    }
+
+    .booking-form-subtitle {
+        font-size: $title-fs-s;
+        padding-bottom: 22px;
+    }
+}
+
+.booking-form {
+    flex-direction: column;
+}
+
+.input-title {
+    margin-bottom: 8px;
+}
+
+input[type=text], input[type=date], input[type=time] {  
+    @include input;
+    margin-bottom: 13px;
+}
+
+::placeholder {
+    color: $light-gray-color;    
+}
+
+.form-element-time {
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;   
+        justify-content: space-between;   
+    } 
+
+    input[type=text],input[type=time], input[type=date] {
+        @media screen and (min-width: 768px) {
+            width: 290px;           
+        }
+
+        @media screen and (min-width: 1300px) {
+            width: 500px;           
+        }
+
+        @media screen and (min-width: 1500px) {
+            width: 210px;           
+        }
+
+        @media screen and (min-width: 1850px) {
+            width: 286px;           
+        }
+    }
+}
+
+.form-element-radio, .form-element-checkbox {
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid $light-gray-color;
+    border-radius: 4px;
+    padding: 13px;
+    margin-bottom: 15px;     
+}
+
+.form-element-radio {
+    @media screen and (min-width: 768px) {
+        height: 78px;  
+        flex-wrap: wrap;   
+        padding-left: 25px;      
+    }
+}
+
+.form-element-checkbox {
+    @media screen and (min-width: 768px) {
+        height: 100px;  
+        flex-wrap: wrap;   
+        padding-left: 25px;         
+    }
+}
+
+.radio-box, .checkbox-box {
+    margin-bottom: 5px;
+}
+
+input[type=checkbox], input[type=radio] {
+    display: none;
+}
+
+input[type=radio] + label:before {
+    content: "\26AB";
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #000;   
+    line-height: 16px;
+    margin: -5px 8px 0 0;
+    height: 14px;
+    width: 14px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0;   
+    transition: font-size ease 0.2s; 
+}
+
+input[type=radio]:checked + label:before {
+    font-size: 16px;
+    color: $orange-color;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714"; 
+    display: inline-block;
+    border: 2px solid #000;   
+    line-height: 19px;
+    margin: -5px 8px 0 0;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0;   
+    transition: font-size ease 0.2s; 
+}
+
+input[type=checkbox]:checked + label:before {
+    color: $main-color;
+    background-color: $orange-color;
+    font-size: 16px; 
+    border: none;
+    height: 19px;
+    width: 19px;
+}
+
+.last-box {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.form-element-submit {
+   text-align: center;
+}
+
+.book-now-submit {
+    @include button ($orange-color, $main-color);
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 17px;
+    margin-bottom: 40px;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+        padding: 15px 33px; 
+        width: auto;  
+    } 
+}

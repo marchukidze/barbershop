@@ -1,0 +1,39 @@
+@charset 'utf-8';
+@import "./abstracts/mixins.scss";
+@import "./abstracts/variables.scss";
+@import "./abstracts/placeholders.scss";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body,p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $main-color;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+@import "./layout/header.scss";
+@import "./layout/services_and_team.scss";
+@import "./layout/booking_form.scss";
+@import "./layout/products_and_reviews.scss";
+@import "./layout/footer.scss";
+

@@ -1,0 +1,91 @@
+//colors
+
+$main-color: rgb(255, 255, 255);
+$gray-color: rgb(34, 34, 34);
+$orange-color: rgb(255, 122, 0);
+$lightorange-color: rgb(255, 242, 229);
+$light-gray-color:#dfdfdf;
+$middle-gray-color: rgb(51, 51, 51);
+$trasparent-color: transparent;
+
+//font-sizes
+
+$purchases-fs: 24px;
+$title-fs-s: 16px;
+$title-fs-m: 32px;
+$title-fs-l: 64px;
+
+//other sizes
+
+$hamburger-item-width: 28.5px;
+$hamburger-item-height: 3.5px;
+$hamburger-trigger-height: $hamburger-item-height *5;
+
+$bag-width-s-m: 27px;
+$bag-height-s-m: 25px;
+$bag-width-l: 36px;
+$bag-height-l: 34px;
+
+$logo-large-width-s: 288px;
+$logo-large-height-s: 93px;
+$logo-large-width-m: 400px;
+$logo-large-height-m: 129px;
+$logo-large-width-l: 601px;
+$logo-large-height-l: 194px;
+$logo-small-width-s: 109px;
+$logo-small-height-s: 35px;
+$logo-small-width-m: 154px;
+$logo-small-height-m: 50px;
+
+$services-content-height-s: 570px;
+$services-content-height-m: 437px;
+$services-content-height-l: 400px;
+
+$title-circle-size-s-m: 9px;
+$title-circle-size-l: 21px;
+
+$service-img-height-s: 59px;
+$service-img-height-m-l: 69px;
+
+$workmen-img-width-m: 130px;
+$workmen-img-height-m: 193px;
+$workmen-img-width-l: 134px;
+$workmen-img-height-l: 200px;
+
+$orange-block-width-s: 204px;
+$orange-block-height-s: 330px;
+$orange-block-width-m: 190px;
+$orange-block-height-m: 313px;
+$orange-block-width-l: 198px;
+$orange-block-height-l: 325px;
+$transparent-block-width-s: 204px;
+$transparent-block-height-s: 334px;
+$transparent-block-width-m: 182px;
+$transparent-block-height-m: 299px;
+$transparent-block-width-l: 198px;
+$transparent-block-height-l: 326px;
+
+$workman-img-width-s: 202px;
+$workman-img-height-s: 300px;
+$workman-img-width-m: 190px;
+$workman-img-height-m: 283px;
+$workman-img-width-l: 197px;
+$workman-img-height-l: 293px;
+
+$arrow-block-width: 53px;
+$arrow-block-height: 53px;
+
+$map-width-s: 100%;
+$map-width-m: 89.5%;
+$map-height-s: 190px;
+$map-height-m: 400px;
+$map-width-l: 727px;
+$map-height-l: 428px;
+
+$workman-review-img-width-m: 122px;
+$workman-review-img-height-m: 182px;
+$workmen-review-img-width-m: 180px;
+$workmen-review-img-height-m: 269px;
+
+$workman-review-img-width-l: 134px;
+$workman-review-img-height-l: 200px;
